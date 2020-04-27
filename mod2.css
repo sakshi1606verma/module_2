@@ -1,0 +1,102 @@
+body{
+  margin:3%;
+}
+header{
+    font-family:"Lucida Console";
+    text-align:center;
+    margin:4%;
+  }
+  *{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+  }
+  
+  p{
+    font-family:Courier New;
+    text-align:justify;
+    
+  }
+  .beef, .chicken, .sushi{
+    background-color:#F08080;
+    border:2px solid black;
+    padding:0%;
+    width:30%;
+    display:inline-block;
+    position:relative;
+  }
+ 
+  h2{
+    background-color:	#FFFF00;
+    width:35%;
+    text-align:center;
+    margin:0;
+    position:relative;
+    border:2px solid black;
+    float:right;
+  }
+
+  .beef p, .chicken p, .sushi p{
+    padding: 3%;
+    margin-top: 30px;
+  }
+
+  @media (min-width: 992px){
+    .chicken{
+      display: inline-block;
+      width:32%;
+      margin-right: 1%;
+    }
+    .beef{
+      display: inline-block;
+      width:32%;
+      margin-right:1%;
+    }
+    .sushi{
+      display: inline-block;
+      width:32%;
+      
+    }
+
+  }
+
+  @media (min-width: 768px) and (max-width:991px){
+    .chicken{
+      display: inline-block;
+      width:48%;
+      margin-bottom:1%;
+      margin-right: 2%;
+
+    }
+    .beef{
+      display: inline-block;
+      width:48%;
+      margin-bottom:1%;
+      
+    }
+    .sushi{
+      display: block;
+      width:100%;
+     
+    }
+
+  }
+
+  @media (max-width: 767px){
+    .chicken{
+      display:block;
+      width:100%;
+      margin-bottom:2%;
+    }
+    .beef{
+      display: block;
+      width:100%;
+      margin-bottom:2%;
+    }
+    .sushi{
+      display: block;
+      width:100%;
+      margin-bottom:2%;
+    }
+
+  }
